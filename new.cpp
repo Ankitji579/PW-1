@@ -119,12 +119,10 @@ for(int row=0; row<n;row++){
         else{
             cout<<" ";
         }
+        
     }
     cout<<"\n";
 }
 
-
-
-    
     return 0;
 }
