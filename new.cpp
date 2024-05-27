@@ -3,7 +3,13 @@ using namespace std;
 
 int main(){
 
-    int a =4;
-    int b =sqrt(a);
-    cout<<b;
+    
+    for(int row =0; row<3;row++){
+        if(int row==0||row==2){
+            for(int col =0; col<5;col++){
+                
+            }
+        }
+
+    }
 }
