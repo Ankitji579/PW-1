@@ -98,31 +98,62 @@ int main(){
 
 //Problem -2 (Half-Pyramid)
 
-int n;
-cin>>n;
+// int n;
+// cin>>n;
 
-for(int row=0; row<n;row++){
-    int k=0;
-    for(int col=0; col<(2*n-1);col++){
-        if(col<(n-row-1)){
-            cout<<" ";
-        }
-        else if( k<(2*row+1)){
+// for(int row=0; row<n;row++){
+//     int k=0;
+//     for(int col=0; col<(2*n-1);col++){
+//         if(col<(n-row-1)){
+//             cout<<" ";
+//         }
+//         else if( k<(2*row+1)){
 
-            if(k==0||k==2*row|| row==n-1){
-                cout<<"*"; 
-            }
-            else
-            cout<<" ";
-            k++;
-        }
-        else{
-            cout<<" ";
-        }
+//             if(k==0||k==2*row|| row==n-1){
+//                 cout<<"*"; 
+//             }
+//             else
+//             cout<<" ";
+//             k++;
+//         }
+//         else{
+//             cout<<" ";
+//         }
         
+//     }
+//     cout<<"\n";
+// }
+  
+  // new approach- half approach
+
+  int n;
+  cin>>n;
+  for(int row=0; row<n;row++){
+
+    for(int col=0; col<n-row-1;col++){
+        
+        cout<<" ";
+  }
+    for(int col=0;col<row+1;col++){
+        cout<<"* ";
     }
     cout<<"\n";
-}
+  }
+
+    // int n;
+    // cin>>n;
+    for(int i=0; i<n; i++){
+        for(int j=0;j<i;j++){
+             
+            cout<<" ";
+        }
+        for(int j=0;j<n-i;j++){
+            cout<<"* ";
+        }
+
+        cout<<"\n";
+    }
+
 
     return 0;
 }
